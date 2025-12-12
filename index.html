@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 豪威尾牙 - 電影主題派對流程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f1f5f9;
+        }
+
+        .gold-text {
+            color: #fbbf24;
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+        }
+
+        .gold-border {
+            border-color: #fbbf24;
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 24px;
+            width: 2px;
+            background: #334155;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        /* 打印樣式 */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .no-print {
+                display: none;
+            }
+            .timeline-line::before {
+                display: none;
+            }
+            .card {
+                border: 1px solid #ccc;
+                page-break-inside: avoid;
+            }
+            .gold-text {
+                color: #000;
+                text-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- 導航/打印按鈕 -->
+    <div class="fixed top-4 right-4 z-50 no-print">
+        <button onclick="window.print()" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 flex items-center gap-2">
+            <i class="fas fa-print"></i> 列印流程表
+        </button>
+    </div>
+
+    <!-- Header Section -->
+    <header class="relative py-16 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0f172a]"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <div class="inline-block border-2 border-yellow-500 px-4 py-1 rounded-full text-yellow-500 text-sm font-bold tracking-wider mb-4">
+                OmniVision 2025
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 gold-text tracking-tight">
+                <i class="fas fa-film mr-2"></i> 電影主題 Cosplay 派對
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light mb-8">
+                邊吃邊看 (Eat & Watch) 沉浸式體驗
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700">
+                <div class="flex flex-col items-center">
+                    <i class="far fa-calendar-alt text-yellow-500 text-2xl mb-2"></i>
+                    <span class="text-sm text-slate-400">日期</span>
+                    <span class="font-bold">2026年2月2日 (一)</span>
+                </div>
+                <div class="flex flex-col items-center border-y md:border-y-0 md:border-x border-slate-600 py-4 md:py-0">
+                    <i class="fas fa-map-marker-alt text-yellow-500 text-2xl mb-2"></i>
+                    <span class="text-sm text-slate-400">地點</span>
+                    <span class="font-bold">芙莉嘉 (Frigga)</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="far fa-clock text-yellow-500 text-2xl mb-2"></i>
+                    <span class="text-sm text-slate-400">時間</span>
+                    <span class="font-bold">11:30 - 14:30</span>
+                </div>
+            </div>
+            
+            <div class="mt-6 bg-red-900/30 text-red-200 px-4 py-2 rounded-lg inline-block border border-red-500/30">
+                <i class="fas fa-utensils mr-2"></i> <strong>11:43 準時上菜</strong> - 活動全程邊用餐邊進行
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 pb-20">
+
+        <!-- Timeline Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-10 text-center flex items-center justify-center gap-3">
+                <i class="fas fa-hourglass-half text-yellow-500"></i> 黃金流程表
+            </h2>
+            
+            <div class="relative timeline-line space-y-8">
+                
+                <!-- 09:30 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="hidden md:block w-5/12 text-right pr-8">
+                        <h3 class="text-xl font-bold text-slate-300">前置準備</h3>
+                        <p class="text-slate-400 text-sm">佈景搭建、音響測試、投影確認、走位測試</p>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-600 rounded-full border-4 border-[#0f172a] group-hover:bg-yellow-500 transition duration-300 z-10"></div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pl-8">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-slate-500 shadow-md">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="text-2xl font-bold text-slate-200">09:30</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">35 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-slate-200 mb-1">前置準備</h3>
+                            <p class="md:hidden text-slate-400 text-sm mb-2">佈景搭建、音響測試</p>
+                            <div class="flex items-center gap-2 text-xs text-slate-500">
+                                <i class="fas fa-user-circle"></i> 福委全員, Mini, Raven
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11:30 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pr-8 md:text-right order-1">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-blue-500 shadow-md">
+                            <div class="flex justify-between items-start mb-1 md:flex-row-reverse">
+                                <span class="text-2xl font-bold text-blue-400">11:30</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">2 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-slate-200 mb-1">同仁進場</h3>
+                            <p class="md:hidden text-slate-400 text-sm mb-2">快速簽到、領投票紙</p>
+                            <div class="flex items-center gap-2 text-xs text-slate-500 md:justify-end">
+                                <i class="fas fa-user-circle"></i> 簽到: Lily, Jason
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-[#0f172a] z-10"></div>
+                    <div class="hidden md:block w-5/12 pl-8 order-2">
+                        <h3 class="text-xl font-bold text-slate-300">同仁進場</h3>
+                        <p class="text-slate-400 text-sm">快速簽到 (領取投票紙)、引導入座</p>
+                    </div>
+                </div>
+
+                <!-- 11:32 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="hidden md:block w-5/12 text-right pr-8">
+                        <h3 class="text-xl font-bold text-slate-300">📸 餐前大合照</h3>
+                        <p class="text-slate-400 text-sm">把握服裝最整齊時刻，全員舞台集合</p>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-[#0f172a] z-10"></div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pl-8">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-purple-500 shadow-md">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="text-2xl font-bold text-purple-400">11:32</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">11 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-slate-200 mb-1">📸 餐前大合照</h3>
+                            <p class="md:hidden text-slate-400 text-sm mb-2">全員舞台背景前大合照</p>
+                            <div class="flex items-center gap-2 text-xs text-slate-500">
+                                <i class="fas fa-camera"></i> 外包攝影師
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11:43 CRITICAL -->
+                <div class="relative md:flex items-center justify-center py-4">
+                    <div class="absolute left-0 md:left-auto w-full md:w-auto bg-red-600 text-white px-6 py-2 rounded-full font-bold shadow-[0_0_15px_rgba(220,38,38,0.5)] z-20 flex items-center justify-center gap-2 border-2 border-red-400 ml-4 md:ml-0">
+                        <i class="fas fa-utensils"></i> 11:43 準時上菜 & 開場
+                    </div>
+                </div>
+
+                <!-- 11:45 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pr-8 md:text-right order-1">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-yellow-500 shadow-md ring-1 ring-yellow-500/30">
+                            <div class="flex justify-between items-start mb-1 md:flex-row-reverse">
+                                <span class="text-2xl font-bold gold-text">11:45</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">35 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-white mb-1">💎 年度大獎頒獎</h3>
+                            <ul class="md:hidden text-slate-400 text-sm mb-2 list-disc list-inside">
+                                <li>OOA獎</li>
+                                <li>久任員工獎</li>
+                                <li>專利獎</li>
+                            </ul>
+                            <div class="flex items-center gap-2 text-xs text-slate-500 md:justify-end">
+                                <i class="fas fa-trophy text-yellow-500"></i> Benson, Mini
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-500 rounded-full border-4 border-[#0f172a] shadow-[0_0_10px_#eab308] z-10"></div>
+                    <div class="hidden md:block w-5/12 pl-8 order-2">
+                        <h3 class="text-xl font-bold text-white">💎 年度大獎頒獎</h3>
+                        <p class="text-slate-400 text-sm mb-2">OOA、久任、專利獎</p>
+                        <p class="text-xs text-yellow-500 italic">* 每位獲獎者 3-5 分鐘感言</p>
+                    </div>
+                </div>
+
+                <!-- 12:20 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="hidden md:block w-5/12 text-right pr-8">
+                        <h3 class="text-xl font-bold text-pink-400">🎭 Cosplay 走秀</h3>
+                        <p class="text-slate-400 text-sm">邊用餐邊看秀，記得投票！</p>
+                        <p class="text-xs text-slate-500 mt-1">音樂、燈光全開</p>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-pink-500 rounded-full border-4 border-[#0f172a] z-10"></div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pl-8">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-pink-500 shadow-md">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="text-2xl font-bold text-pink-400">12:20</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">30 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-slate-200 mb-1">🎭 Cosplay 走秀</h3>
+                            <p class="md:hidden text-slate-400 text-sm mb-2">每隊2-3分鐘展示，同仁邊吃邊投</p>
+                            <div class="flex items-center gap-2 text-xs text-slate-500">
+                                <i class="fas fa-sliders-h"></i> 控場: Raven / AV: David
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12:50 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pr-8 md:text-right order-1">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-green-500 shadow-md">
+                            <div class="flex justify-between items-start mb-1 md:flex-row-reverse">
+                                <span class="text-2xl font-bold text-green-400">12:50</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">10 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-slate-200 mb-1">🎮 電影快問快答</h3>
+                            <p class="md:hidden text-slate-400 text-sm mb-2">搶答 6-8 題，即時頒獎</p>
+                            <div class="flex items-center gap-2 text-xs text-slate-500 md:justify-end">
+                                <i class="fas fa-microphone-alt"></i> Benson
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-green-500 rounded-full border-4 border-[#0f172a] z-10"></div>
+                    <div class="hidden md:block w-5/12 pl-8 order-2">
+                        <h3 class="text-xl font-bold text-green-400">🎮 電影快問快答</h3>
+                        <p class="text-slate-400 text-sm">電影冷知識搶答，準備好你的手速</p>
+                    </div>
+                </div>
+
+                 <!-- 13:00 Item (Small) -->
+                 <div class="relative md:flex items-center justify-between group">
+                    <div class="hidden md:block w-5/12 text-right pr-8">
+                        <h3 class="text-lg font-bold text-slate-400">⚡ 福委計票</h3>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-slate-600 rounded-full border-2 border-[#0f172a] z-10"></div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pl-8">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-slate-500">13:00</span>
+                            <span class="text-sm text-slate-400">Cosplay 投票結算 (3分鐘)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13:03 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pr-8 md:text-right order-1">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.2)]">
+                            <div class="flex justify-between items-start mb-1 md:flex-row-reverse">
+                                <span class="text-2xl font-bold text-red-500">13:03</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">37 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-white mb-1">🎁 幸運大抽獎</h3>
+                            <p class="md:hidden text-slate-400 text-sm mb-2">全場最高潮！5-6輪大型抽獎</p>
+                            <div class="flex items-center gap-2 text-xs text-slate-500 md:justify-end">
+                                <i class="fas fa-gift"></i> 抽獎: Lily
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 bg-red-500 rounded-full border-4 border-[#0f172a] animate-pulse z-10"></div>
+                    <div class="hidden md:block w-5/12 pl-8 order-2">
+                        <h3 class="text-2xl font-bold text-white">🎁 幸運大抽獎</h3>
+                        <p class="text-slate-300 text-sm">全場最高潮時刻</p>
+                        <p class="text-xs text-red-400 mt-1">人氣獎 / 禮券 / 家電</p>
+                    </div>
+                </div>
+
+                <!-- 13:40 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="hidden md:block w-5/12 text-right pr-8">
+                        <h3 class="text-xl font-bold text-indigo-400">🎬 Cosplay 頒獎</h3>
+                        <p class="text-slate-400 text-sm">最佳創意、最搞笑、最還原</p>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-[#0f172a] z-10"></div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pl-8">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-indigo-500 shadow-md">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="text-2xl font-bold text-indigo-400">13:40</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">15 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-slate-200 mb-1">🎬 Cosplay 頒獎</h3>
+                            <div class="flex items-center gap-2 text-xs text-slate-500">
+                                <i class="fas fa-star"></i> 頒獎: Benson
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13:55 Item -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pr-8 md:text-right order-1">
+                        <div class="bg-slate-800 p-4 rounded-lg border-l-4 border-slate-400 shadow-md">
+                            <div class="flex justify-between items-start mb-1 md:flex-row-reverse">
+                                <span class="text-2xl font-bold text-slate-400">13:55</span>
+                                <span class="bg-slate-700 text-xs px-2 py-1 rounded text-slate-300">10 min</span>
+                            </div>
+                            <h3 class="md:hidden text-lg font-bold text-slate-200 mb-1">🎤 尾聲 & 合照</h3>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-400 rounded-full border-4 border-[#0f172a] z-10"></div>
+                    <div class="hidden md:block w-5/12 pl-8 order-2">
+                        <h3 class="text-xl font-bold text-slate-400">🎤 尾聲 & 合照</h3>
+                        <p class="text-slate-400 text-sm">主持人謝幕、餐後自由合影</p>
+                    </div>
+                </div>
+
+                 <!-- 14:05 Item -->
+                 <div class="relative md:flex items-center justify-between group">
+                    <div class="hidden md:block w-5/12 text-right pr-8">
+                        <h3 class="text-xl font-bold text-slate-500">🍽️ 自由交流</h3>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-600 rounded-full border-4 border-[#0f172a] z-10"></div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 md:pl-8">
+                        <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700">
+                            <div class="flex items-center gap-3">
+                                <span class="font-bold text-slate-500">14:05</span>
+                                <span class="text-sm text-slate-400">純用餐時間，自由走動</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- End -->
+                 <div class="flex justify-center pt-8">
+                    <div class="bg-slate-800 px-6 py-2 rounded-full border border-slate-700 text-slate-400 text-sm">
+                        <i class="fas fa-flag-checkered mr-2"></i> 14:30 活動結束
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Cards Grid Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            
+            <!-- Roles Card -->
+            <section class="bg-slate-800 rounded-2xl p-6 border border-slate-700 shadow-xl">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2 gold-text">
+                    <i class="fas fa-users"></i> 工作職掌
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex border-b border-slate-700 pb-2">
+                        <div class="w-1/3 text-slate-400 text-sm">舞台主持</div>
+                        <div class="w-2/3 font-medium">Benson (主), Mini (助)</div>
+                    </div>
+                    <div class="flex border-b border-slate-700 pb-2">
+                        <div class="w-1/3 text-slate-400 text-sm">現場總控</div>
+                        <div class="w-2/3 font-medium">Raven</div>
+                    </div>
+                    <div class="flex border-b border-slate-700 pb-2">
+                        <div class="w-1/3 text-slate-400 text-sm">視聽 AV</div>
+                        <div class="w-2/3 font-medium">David (視覺), Mason (音效)</div>
+                    </div>
+                    <div class="flex border-b border-slate-700 pb-2">
+                        <div class="w-1/3 text-slate-400 text-sm">簽到/票務</div>
+                        <div class="w-2/3 font-medium">Lily, Jason</div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-1/3 text-slate-400 text-sm">計票小組</div>
+                        <div class="w-2/3 font-medium">Amber, William, SC</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Checklist Card -->
+            <section class="bg-slate-800 rounded-2xl p-6 border border-slate-700 shadow-xl">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2 text-green-400">
+                    <i class="fas fa-clipboard-check"></i> 11:00 AM 檢查清單
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-green-500 focus:ring-green-500 bg-slate-700">
+                        <span class="text-slate-300 text-sm">AV測試 (投影、麥克風、音量平衡)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-green-500 focus:ring-green-500 bg-slate-700">
+                        <span class="text-slate-300 text-sm">道具確認 (抽獎箱、獎品、獎狀)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-green-500 focus:ring-green-500 bg-slate-700">
+                        <span class="text-slate-300 text-sm">場地確認 (桌次、走秀動線)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-green-500 focus:ring-green-500 bg-slate-700">
+                        <span class="text-slate-300 text-sm">餐廳確認 (11:43 準時上菜)</span>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <footer class="text-center text-slate-600 text-sm">
+            <p>© 2025 OmniVision Welfare Committee</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
